@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="BrazosRobots" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find BrazosRobots_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find BrazosRobots_description)/urdf/BrazosRobots.trans" />
+<xacro:include filename="$(find BrazosRobots_description)/urdf/BrazosRobots.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.17205647112873 0.001807979537057752 0.266411617148101"/>
+    <mass value="9.709180485300958"/>
+    <inertia ixx="0.315514" ixy="0.000969" ixz="0.005409" iyy="0.43792" iyz="-0.071504" izz="0.21105"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Articulacion1_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.025712103948816616 0.28810455274326485 -0.1421936582497399"/>
+    <mass value="1.3047846233648344"/>
+    <inertia ixx="0.047321" ixy="-1.5e-05" ixz="7e-06" iyy="0.011122" iyz="0.01809" izz="0.038848"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0487 -0.024 -0.493391"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Articulacion1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0487 -0.024 -0.493391"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Articulacion1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Articulacion2_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.025712103948799792 0.25439068428416484 0.19623574687602685"/>
+    <mass value="1.3047846233653153"/>
+    <inertia ixx="0.047321" ixy="1.3e-05" ixz="1e-05" iyy="0.019199" iyz="-0.022044" izz="0.030771"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.003 -0.445463 -0.285378"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Articulacion2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.003 -0.445463 -0.285378"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Articulacion2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Ventosa1_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.028685335321422242 -0.007446522385556098 0.08963855134459142"/>
+    <mass value="0.9820934634534009"/>
+    <inertia ixx="0.003025" ixy="-1.8e-05" ixz="0.000213" iyy="0.003322" iyz="0.000131" izz="0.001745"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0487 -0.817606 -0.572448"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Ventosa1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0487 -0.817606 -0.572448"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Ventosa1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Articulacion3_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.025712103948818454 0.28777227448273474 -0.14286462312588616"/>
+    <mass value="1.304784623364844"/>
+    <inertia ixx="0.047321" ixy="-1.5e-05" ixz="7e-06" iyy="0.011207" iyz="0.018155" izz="0.038763"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.3287 -0.024 -0.493958"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Articulacion3_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.3287 -0.024 -0.493958"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Articulacion3_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Articulacion4_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.02571210394879797 0.253762241979082 0.1970479528133552"/>
+    <mass value="1.3047846233653204"/>
+    <inertia ixx="0.047321" ixy="1.3e-05" ixz="1e-05" iyy="0.01934" iyz="-0.022081" izz="0.03063"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.277 -0.444977 -0.284963"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Articulacion4_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.277 -0.444977 -0.284963"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Articulacion4_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Ventosa2_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.02868543374626742 -0.007254714090398129 0.08965431666621748"/>
+    <mass value="0.9820934799344867"/>
+    <inertia ixx="0.003025" ixy="-1.7e-05" ixz="0.000213" iyy="0.003322" iyz="0.000128" izz="0.001745"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.3287 -0.816201 -0.573221"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Ventosa2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.3287 -0.816201 -0.573221"/>
+    <geometry>
+      <mesh filename="package://BrazosRobots_description/meshes/Ventosa2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev2" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0487 0.024 0.493391"/>
+  <parent link="base_link"/>
+  <child link="Articulacion1_1_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rev3" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0517 0.421463 -0.208013"/>
+  <parent link="Articulacion1_1_1"/>
+  <child link="Articulacion2_1_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rev4" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0517 0.372143 0.28707"/>
+  <parent link="Articulacion2_1_1"/>
+  <child link="Ventosa1_1_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Rev5" type="continuous">
+  <origin rpy="0 0 0" xyz="0.3287 0.024 0.493958"/>
+  <parent link="base_link"/>
+  <child link="Articulacion3_1_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rev6" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0517 0.420977 -0.208995"/>
+  <parent link="Articulacion3_1_1"/>
+  <child link="Articulacion4_1_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rev7" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0517 0.371224 0.288258"/>
+  <parent link="Articulacion4_1_1"/>
+  <child link="Ventosa2_1_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+</robot>
